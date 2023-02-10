@@ -96,11 +96,11 @@
 
 \makeatletter                       
 \def\printauthor{%                  
-    {\large \@author}}              
+{\large \@author}}              
 \makeatother
 \author{%
-    Artemisia Sarteschi \\ \quad 829677
-    }
+Artemisia Sarteschi \\ \quad 829677
+}
 
 % The following code is borrowed from: https://tex.stackexchange.com/a/86310/10898
 
@@ -114,35 +114,35 @@
 
 \begin{scope}[titlepagecolor!40,line width=12pt,rounded corners=12pt]
 \draw
-  (aux1) -- coordinate (a)
-  ++(225:5) --
-  ++(-45:5.1) coordinate (b);
+(aux1) -- coordinate (a)
+++(225:5) --
+++(-45:5.1) coordinate (b);
 \draw[shorten <= -10pt]
-  (aux3) --
-  (a) --
-  (aux1);
+(aux3) --
+(a) --
+(aux1);
 \draw[opacity=0.6,titlepagecolor,shorten <= -10pt]
-  (b) --
-  ++(225:2.2) --
-  ++(-45:2.2);
+(b) --
+++(225:2.2) --
+++(-45:2.2);
 \end{scope}
 \draw[titlepagecolor,line width=8pt,rounded corners=8pt,shorten <= -10pt]
-  (aux4) --
-  ++(225:0.8) --
-  ++(-45:0.8);
+(aux4) --
+++(225:0.8) --
+++(-45:0.8);
 \begin{scope}[titlepagecolor!70,line width=6pt,rounded corners=8pt]
 \draw[shorten <= -10pt]
-  (aux2) --
-  ++(225:3) coordinate[pos=0.45] (c) --
-  ++(-45:3.1);
+(aux2) --
+++(225:3) coordinate[pos=0.45] (c) --
+++(-45:3.1);
 \draw
-  (aux2) --
-  (c) --
-  ++(135:2.5) --
-  ++(45:2.5) --
-  ++(-45:2.5) coordinate[pos=0.3] (d);   
+(aux2) --
+(c) --
+++(135:2.5) --
+++(45:2.5) --
+++(-45:2.5) coordinate[pos=0.3] (d);   
 \draw 
-  (d) -- +(45:1);
+(d) -- +(45:1);
 \end{scope}
 \end{tikzpicture}%
 }
@@ -170,13 +170,13 @@
 \noindent
 \hfill
 \begin{minipage}{0.80\linewidth}
-    \begin{flushright}
-        \printauthor
-    \end{flushright}
+\begin{flushright}
+    \printauthor
+\end{flushright}
 \end{minipage}
 %
 \begin{minipage}{0.02\linewidth}
-    \rule{1pt}{125pt}
+\rule{1pt}{125pt}
 \end{minipage}
 \titlepagedecoration
 \end{titlepage}
@@ -188,17 +188,18 @@
 
 
 \tableofcontents
-	
-   
-  %\input{Capitoli/sensimative.tex}
+
+
+%\input{Capitoli/sensimative.tex}
 %\input{Capitoli/Protocol.tex}
-  \input{Capitoli/tabele.tex}
-  \input{Capitoli/Bibliografia.tex}
-		\listoftables
-	\listoffigures
+\input{Capitoli/worflow.tex}
+\input{Capitoli/tabele.tex}
+\input{Capitoli/Bibliografia.tex}
+\listoftables
+\listoffigures
 % \appendix
 
-	%\addcontentsline{toc}{part}{Appendice}
-		
-			
+%\addcontentsline{toc}{part}{Appendice}
+    
+        
 \end{document}
