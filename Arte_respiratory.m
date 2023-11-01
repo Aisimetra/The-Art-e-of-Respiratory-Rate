@@ -54,10 +54,8 @@ for time=1:15000:45000
     result_to_be_saved(row,3) = choose_approch(data(:,time:time+slice), data_ground(:,time:time+slice), 2, confidence, plot_data, resp, confidence_plot, time, folder);
     result_to_be_saved(row,4) = choose_approch(data(:,time:time+slice), data_ground(:,time:time+slice), 3, confidence, plot_data, resp, confidence_plot, time, folder);
     result_to_be_saved(row,5) = recreate_breath_groundtruth(data_ground(8,time+slice), factor_limitation);
-    result_to_be_saved(row,6) = flow_signal(data_ground(4,time:time+slice));
 
     disp(['result from the ground truth ' num2str(recreate_breath_groundtruth(data_ground(8,time+slice)))])
-    disp(['result from toolbox ' num2str(result_to_be_saved(row,6))])
 
     row = row+1;
 end
